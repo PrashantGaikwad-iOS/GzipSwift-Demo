@@ -12,9 +12,12 @@
 		8917E3BF211073E5008BD681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8917E3BD211073E5008BD681 /* Main.storyboard */; };
 		8917E3C1211073E7008BD681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8917E3C0211073E7008BD681 /* Assets.xcassets */; };
 		8917E3C4211073E7008BD681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8917E3C2211073E7008BD681 /* LaunchScreen.storyboard */; };
+		8917E3CC21107ED6008BD681 /* imageToTest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8917E3CB21107ED5008BD681 /* imageToTest.jpg */; };
+		A66642CB07773ACA0C1DC941 /* Pods_GzipSwift_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37C728CE3297F7011BF7AAE /* Pods_GzipSwift_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AA9263F332C4F443A38D5B8 /* Pods-GzipSwift Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GzipSwift Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GzipSwift Demo/Pods-GzipSwift Demo.release.xcconfig"; sourceTree = "<group>"; };
 		8917E3B6211073E5008BD681 /* GzipSwift Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GzipSwift Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8917E3B9211073E5008BD681 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8917E3BB211073E5008BD681 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		8917E3C0211073E7008BD681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8917E3C3211073E7008BD681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8917E3C5211073E7008BD681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8917E3CB21107ED5008BD681 /* imageToTest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imageToTest.jpg; sourceTree = "<group>"; };
+		9D5DB4E61697D1DF02204970 /* Pods-GzipSwift Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GzipSwift Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GzipSwift Demo/Pods-GzipSwift Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		C37C728CE3297F7011BF7AAE /* Pods_GzipSwift_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GzipSwift_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A66642CB07773ACA0C1DC941 /* Pods_GzipSwift_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		036138DB25303CAA0B5214A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C37C728CE3297F7011BF7AAE /* Pods_GzipSwift_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8917E3AD211073E5008BD681 = {
 			isa = PBXGroup;
 			children = (
 				8917E3B8211073E5008BD681 /* GzipSwift Demo */,
 				8917E3B7211073E5008BD681 /* Products */,
+				BD8E0133E98CC77D18886B0A /* Pods */,
+				036138DB25303CAA0B5214A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +71,7 @@
 		8917E3B8211073E5008BD681 /* GzipSwift Demo */ = {
 			isa = PBXGroup;
 			children = (
+				8917E3CB21107ED5008BD681 /* imageToTest.jpg */,
 				8917E3B9211073E5008BD681 /* AppDelegate.swift */,
 				8917E3BB211073E5008BD681 /* ViewController.swift */,
 				8917E3BD211073E5008BD681 /* Main.storyboard */,
@@ -64,6 +82,15 @@
 			path = "GzipSwift Demo";
 			sourceTree = "<group>";
 		};
+		BD8E0133E98CC77D18886B0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D5DB4E61697D1DF02204970 /* Pods-GzipSwift Demo.debug.xcconfig */,
+				2AA9263F332C4F443A38D5B8 /* Pods-GzipSwift Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8917E3C8211073E7008BD681 /* Build configuration list for PBXNativeTarget "GzipSwift Demo" */;
 			buildPhases = (
+				F3C1243DF204FBAB033C85E5 /* [CP] Check Pods Manifest.lock */,
 				8917E3B2211073E5008BD681 /* Sources */,
 				8917E3B3211073E5008BD681 /* Frameworks */,
 				8917E3B4211073E5008BD681 /* Resources */,
+				A6E0D466D0C30C48B60AC1B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,11 +153,51 @@
 			files = (
 				8917E3C4211073E7008BD681 /* LaunchScreen.storyboard in Resources */,
 				8917E3C1211073E7008BD681 /* Assets.xcassets in Resources */,
+				8917E3CC21107ED6008BD681 /* imageToTest.jpg in Resources */,
 				8917E3BF211073E5008BD681 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6E0D466D0C30C48B60AC1B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GzipSwift Demo/Pods-GzipSwift Demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GzipSwift/Gzip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gzip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GzipSwift Demo/Pods-GzipSwift Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3C1243DF204FBAB033C85E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GzipSwift Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8917E3B2211073E5008BD681 /* Sources */ = {
@@ -278,9 +347,11 @@
 		};
 		8917E3C9211073E7008BD681 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D5DB4E61697D1DF02204970 /* Pods-GzipSwift Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H28X75MLUY;
 				INFOPLIST_FILE = "GzipSwift Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,9 +366,11 @@
 		};
 		8917E3CA211073E7008BD681 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AA9263F332C4F443A38D5B8 /* Pods-GzipSwift Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H28X75MLUY;
 				INFOPLIST_FILE = "GzipSwift Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
